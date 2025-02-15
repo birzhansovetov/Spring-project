@@ -22,6 +22,12 @@ public class ProjectConfig {
         return animal;
     }
     @Bean
+    public Animal animal3() {
+        Animal animal = new Animal();
+        animal.setName("Snake");
+        return animal;
+    }
+    @Bean
     public Zoo zoo(Animal animal) {
         Zoo zoo = new Zoo(animal);
         zoo.showAnimal();
